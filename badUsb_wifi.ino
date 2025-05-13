@@ -6,8 +6,6 @@ const char command [] = "echo hello hackers";
 
 void setup() {
   Keyboard.begin();
-  //I recommend that you leave a short delay before start while prototyping.
-  //It will will give you some time to reprogram a board before it starts typing.
   delay(8000);
 }
 
@@ -19,9 +17,6 @@ void loop() {
   Keyboard.releaseAll();
   delay(KEY_DELAY);
   //Inputting cmd command
-  //Keyboard.println("C:\\Users\\hirba\\OneDrive\\Documents\\CODING");
-  //Keyboard.println("cmd");
-  //Keyboard.println("ipconfig")
   Keyboard.println("cmd");
   delay(1000);
   Keyboard.println("cd %temp%");
